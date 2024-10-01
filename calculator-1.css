@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.calculator{
+    justify-content: center;
+    text-align: center;
+    width: 35em;
+    height: 40em;
+    display: block;
+    background-color: aqua;
+    margin: 0 auto;
+    border-color: red;
+    border-radius: 2em;
+   box-shadow: 3px 4px 4px #4379F2;
+    }
+  
+.screen{
+    top: 1em;
+    -webkit-border-radius: 17px;
+border-radius: 17px;
+background: #75ffff;
+-webkit-box-shadow: 10px 10px 21px #367575, -10px -10px 21px #294949;
+box-shadow: 10px 10px 21px #367575, -10px -10px 21px #42f5f5;
+font-size: 30px;
+border: none;
+pointer-events: none;
+display: inline-flex;
+margin: 0 auto;
+width: 80%;
+height: 60px;
+/* direction: rtl; */
+text-align: right;
+-webkit-user-drag: none;
+user-select: none;
+}
+
+.btn, .operator{
+   
+    width: 5em;
+    margin: .6em;
+    height: 5em;
+    border-radius: 50%;
+    border: none;
+    
+    -webkit-border-radius: 48px;
+border-radius: 48px;
+background: #2c9d9d;
+-webkit-box-shadow: 10px 20px 20px #144848, -20px -20px 41px #44f2f2;
+box-shadow: 20px 20px 41px #144848, -20px -20px 41px #3ea8a8;
+}
+.btn:hover, 
+.delete-btn:hover,
+.equal-btn:hover,
+.clear-btn:hover,
+.bracket-btn:hover,
+.percent-btn:hover
+
+{
+    background-color: #15F5BA;
+    transition-duration: 1s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.clear-btn{
+    background-color:#313d55;
+}
+
+.delete-btn{
+    background-color: rgb(75, 69, 69);
+}
+.equal-btn, .bracket-btn, .percent-btn, .divide, .subtract, .multiply, .add{
+    background-color: rgb(61, 80, 61);
+}
+
+.toggle{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+}
+
+label {
+    width: 7em; 
+    height: 2em; 
+    border-radius: 200px;
+    background-color: #4379F2;
+    position: relative; 
+    margin: 0 auto .5em;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+}
+@media (max-width: 800px){
+    .calculator{
+        display: grid;
+        grid-template-columns: (2,2fr);
+        margin: 0 auto;
+    }
+    .screen{
+        width: 400px;
+        height: 100px;
+    }
+
+}
+label::after{
+    content: "";
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #55679C;
+    position: absolute;
+    left: 0;
+   transition: left .3s ease;
+}
+input:checked + label{
+    background-color: #0D7C66;
+}
+input:checked + label::after{
+background-color: #78B7D0;
+left: 4.8em;
+transform: translateX(6%);
+}
+
+input:active + label::after{
+    width: 3em;
+    transition: .2s;
+    margin-right: 2em;
+    position: relative;
+    display: flex;
+}

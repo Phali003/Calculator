@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   
+    <div class="calculator" id="calculator-1">
+        <input class="toggle" type="checkbox" id="light-toggle">
+        <label for="light-toggle"></label>
+        <input class="screen" type="text">
+
+
+        <div class="first">
+<button type="button" class=" operator clear-btn"><strong>AC</strong></button>
+<button type="button" class=" operator bracket-btn"><strong>()</strong></button>
+<button type="button" class=" operator percent-btn"><strong>%</strong></button>
+<button type="button" class=" btn operator-button divide"  data-num="/"><strong>/</strong></button>
+</div>
+<div class="second">
+<button type="button" class=" btn value-btn" data-num="7"><strong>7</strong></button>
+<button type="button" class=" btn value-btn" data-num="8"><strong>8</strong></button>
+<button type="button" class=" btn value-btn" data-num="9"><strong>9</strong></button>
+<button type="button" class=" btn operator-button multiply" data-num="*"><strong>*</strong></button>
+</div>
+<div class="third">
+<button type="button" class=" btn value-btn" data-num="4"><strong>4</strong></button>
+<button type="button" class=" btn value-btn" data-num="5"><strong>5</strong></button>
+<button type="button" class=" btn value-btn" data-num="6"><strong>6</strong></button>
+<button type="button" class=" btn operator-button subtract" data-num="-"><strong>-</strong></button>
+</div>
+
+<div class="forth">
+<button type="button" class=" btn value-btn" data-num="1"><strong>1</strong></button>
+<button type="button" class=" btn value-btn" data-num="2"><strong>2</strong></button>
+<button type="button" class=" btn value-btn" data-num="3"><strong>3</strong></button>
+<button type="button" class=" btn operator-button add"  data-num="+"><strong>+</strong></button>
+</div>
+
+<div class="fifth">
+<button type="button" class=" btn value-btn" data-num="0"><strong>0</strong></button>
+<button type="button" class=" btn  point-btn" data-num="."><strong>.</strong></button>
+<button type="button" class="  operator delete-btn" id="deleteButton"><strong>x</strong></button>
+<button type="button" class="  operator equal-btn"><strong>=</strong></button>
+</div>
+</div>
+
+<script src="calculator-1.js">
+    
+</script>
+</body>
+</html>
