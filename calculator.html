@@ -5,49 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
     <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    
-   <header>MY CALCULATOR</header>
-
-
-   <summary></summary>
    
-  <div class="calculator">
-
-    <div class="inputs">
-        <form>
-
-
-         <input type="text" class="screen">
-        </form>
+    <div class="calculator" id="calculator-1">
+        <input class="toggle" type="checkbox" id="light-toggle">
+        <label for="light-toggle"></label>
+        <input class="screen" type="text">
 
 
+        <div class="first">
+<button type="button" class=" operator clear-btn"><strong>AC</strong></button>
+<button type="button" class=" operator bracket-btn"><strong>()</strong></button>
+<button type="button" class=" operator percent-btn"><strong>%</strong></button>
+<button type="button" class=" btn operator-button divide"  data-num="/"><strong>/</strong></button>
+</div>
+<div class="second">
+<button type="button" class=" btn value-btn" data-num="7"><strong>7</strong></button>
+<button type="button" class=" btn value-btn" data-num="8"><strong>8</strong></button>
+<button type="button" class=" btn value-btn" data-num="9"><strong>9</strong></button>
+<button type="button" class=" btn operator-button multiply" data-num="*"><strong>*</strong></button>
+</div>
+<div class="third">
+<button type="button" class=" btn value-btn" data-num="4"><strong>4</strong></button>
+<button type="button" class=" btn value-btn" data-num="5"><strong>5</strong></button>
+<button type="button" class=" btn value-btn" data-num="6"><strong>6</strong></button>
+<button type="button" class=" btn operator-button subtract" data-num="-"><strong>-</strong></button>
+</div>
 
-        <button type="button" class="btn btn-yellow" data-num="+">+</button>
-        <button type="button" class="btn btn-yellow" data-num="-">-</button>
-        <button type="button" class="btn btn-yellow" data-num="*">*</button>
-        <button type="button" class="btn btn-yellow" data-num="/">/</button>
-        
-        <button type="button" class="btn btn-white" data-num="9">9</button>
-        <button type="button" class="btn btn-white" data-num="8">8</button>
-        <button type="button" class="btn btn-white" data-num="7">7</button>
-        <button type="button" class="btn btn-white" data-num="6">6</button>
-        <button type="button" class="btn btn-white" data-num="5">5</button>
-        <button type="button" class="btn btn-white" data-num="4">4</button>
-        <button type="button" class="btn btn-white" data-num="3">3</button>
-        <button type="button" class="btn btn-white" data-num="2">2</button>
-        <button type="button" class="btn btn-white" data-num="1">1</button>
-        <button type="button" class="btn btn-white" data-num="0">0</button>
-        <button type="button" class="btn btn-white" data-num=".">.</button>
+<div class="forth">
+<button type="button" class=" btn value-btn" data-num="1"><strong>1</strong></button>
+<button type="button" class=" btn value-btn" data-num="2"><strong>2</strong></button>
+<button type="button" class=" btn value-btn" data-num="3"><strong>3</strong></button>
+<button type="button" class=" btn operator-button add"  data-num="+"><strong>+</strong></button>
+</div>
 
-        <button type="button" class=" equal btn-equal">=</button>
-        <button type="button" class=" clear btn-clear">AC</button>
-    </div>
+<div class="fifth">
+<button type="button" class=" btn value-btn" data-num="0"><strong>0</strong></button>
+<button type="button" class=" btn  point-btn" data-num="."><strong>.</strong></button>
+<button type="button" class="  operator delete-btn" id="deleteButton"><strong>x</strong></button>
+<button type="button" class="  operator equal-btn"><strong>=</strong></button>
+</div>
+</div>
 
-  </div>  
-
-<script src="calculator.js"></script>
-
+<script src="calculator.js">
+    
+</script>
 </body>
 </html>
