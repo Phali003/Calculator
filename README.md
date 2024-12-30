@@ -16,8 +16,9 @@ A simple, modern calculator built with HTML, CSS, and JavaScript. This calculato
 
 ## Demo
 
-Check out the live demo here.
-http://127.0.0.1:5501/Calculator-1.html
+**Live Demo**: 
+[Visit Calculator-1 Project](https://phali003.github.io/calculator-1/)
+
 
 ## Screenshots
 
